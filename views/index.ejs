@@ -12,16 +12,18 @@
     </header>
     <main>
         <ul>
+            <% data.forEach((element, i) => { %>
             <li>
-                <h2>1</h2>
+                <h2><%= i +1 %></h2>
                 <div>
                     <img src="/images/mario-placeholder.png" alt="">
                     <div>
-                        <p><a href="/hoi">GwenVersteegh0610</a></p>
-                        <p>45</p>
+                        <p><a href="/hoi"><%= element.node.owner.login %></a></p>
+                        <p><span><%= element.node.defaultBranchRef.target.history.totalCount %></span> commits</p>
                     </div>
                 </div>
             </li>
+            <%})%>
         </ul>
     </main>
     <footer>

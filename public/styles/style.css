@@ -34,10 +34,13 @@ main ul li{
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-end;
+    border: 2px solid rgb(105, 105, 105);
+    margin-bottom: 1em;
 }
 
+/* plaats */
 main ul li h2{
-    font-size: 4.5em;
+    font-size: 3.2em;
     color: white;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
@@ -78,10 +81,14 @@ main ul li div p a{
  /* punten */
 main ul li div div p:last-of-type {
     margin-top: 0.125em;
-    font-size: 2.5em;
+    font-size: 1em;
     background: -webkit-linear-gradient(#FFD634, #ED7B31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+main ul li div div p span{
+    font-size: 2.5em;
 }
 
 
