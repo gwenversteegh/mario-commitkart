@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'mario';
+    src: url('../fonts/mario.ttf') format('truetype');
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'mario', arial;
+}
+
+main{
+    position: relative;
+}
+
+main ul{
+    width: 30vw;
+    padding: 1em;
+    list-style-type: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+main ul li{
+    padding: 1em;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+main ul li h2{
+    font-size: 4.5em;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px -3px 0px white;
+}
+
+main ul li > div{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);   
+    display: flex;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+/* profielfoto */
+main ul li img{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*  naam en punten*/
+main ul li > div div{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* naam */
+main ul li div p a{
+    text-size-adjust: auto;
+    text-decoration: none;
+    color: white;
+}
+
+ /* punten */
+main ul li div div p:last-of-type {
+    margin-top: 0.125em;
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#FFD634, #ED7B31);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
