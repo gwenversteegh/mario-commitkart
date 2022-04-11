@@ -18,12 +18,15 @@ main{
 
 main ul{
     width: 30vw;
+    height: 100vh;
     padding: 1em;
     list-style-type: none;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 0;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.8);    
+    border-radius: 0.5em;
+    overflow: scroll;
 }
 
 main ul li{
