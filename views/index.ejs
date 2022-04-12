@@ -11,6 +11,18 @@
 
     </header>
     <main>
+        <div id="baan">
+            <ul>
+                <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
+                <% data.forEach((element, i) => { %>
+                
+                <li>
+                    <img src="<%= element.node.owner.avatarUrl %>" alt="">
+                    <p><%= element.node.owner.login %></p>      
+                </li>
+                <%})%>
+            </ul>
+        </div>
         <ul>
             <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
             <% data.forEach((element, i) => { %>

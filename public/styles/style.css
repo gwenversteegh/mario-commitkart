@@ -21,7 +21,35 @@ main{
     background-repeat: no-repeat;
 }
 
-main ul{
+main div#baan{
+    width: 43vw;
+    height: 53vh;
+    position: absolute;
+    top: 22vh;
+    left: 11vw;
+}
+
+main div#baan ul{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    list-style-type: none;
+}
+
+main div#baan ul li{
+    width: 2vw;
+    height: 5vw;
+    position: absolute;
+    top: 0; left: 55%;
+}
+
+main div#baan ul li img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* -------------------- raking lijst -------------------- */
+main > ul{
     width: 30vw;
     height: 100vh;
     padding: 1em;
@@ -34,7 +62,7 @@ main ul{
     overflow: scroll;
 }
 
-main ul li{
+main > ul li{
     padding: 1em;
     background-color: grey;
     border: 2px solid rgb(105, 105, 105);
@@ -49,22 +77,22 @@ main ul li{
     position: relative;
 }
 
-main ul li:first-of-type{
+main > ul li:first-of-type{
     background-color: #d6ab36;
     border: 2px solid #F9DB94;
 }
 
-main ul li:nth-of-type(2){
+main > ul li:nth-of-type(2){
     background-color: #adaca9;
     border: 2px solid #dfdcdc;
 }
 
-main ul li:nth-of-type(3){
+main > ul li:nth-of-type(3){
     background-color: #af7a25;
     border: 2px solid #ca9f3b;
 }
 
-main ul li:nth-of-type(3)::after{
+main > ul li:nth-of-type(3)::after{
     content: "";
     width: 100%;
     height: 1px;
@@ -75,12 +103,12 @@ main ul li:nth-of-type(3)::after{
     left: 0;
 }
 
-main ul li:nth-of-type(4){
+main > ul li:nth-of-type(4){
     margin-top: 3em;
 }
 
 /* plaats */
-main ul li h2{
+main > ul li h2{
     font-size: 3.2em;
     color: white;
     -webkit-text-stroke-width: 3px;
@@ -88,17 +116,16 @@ main ul li h2{
     text-shadow: 1px -3px 0px white;
 }
 
-main ul li:first-of-type h2{
+main > ul li:first-of-type h2{
     color: transparent;
     text-shadow: 1px -3px 0px transparent;
-
 
     background: -webkit-linear-gradient(#FFD634, #ED7B31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-main ul li:nth-of-type(2) h2{
+main > ul li:nth-of-type(2) h2{
     color: transparent;
     text-shadow: 1px -3px 0px transparent;
 
@@ -107,7 +134,7 @@ main ul li:nth-of-type(2) h2{
     -webkit-text-fill-color: transparent;
 }
 
-main ul li:nth-of-type(3) h2{
+main > ul li:nth-of-type(3) h2{
     color: transparent;
     text-shadow: 1px -3px 0px transparent;
 
@@ -116,17 +143,17 @@ main ul li:nth-of-type(3) h2{
     -webkit-text-fill-color: transparent;
 }
 
-main ul li h3{
+main > ul li h3{
     grid-column-start: 1;
     margin-top: 0.25em;
     text-shadow: 0px -1px 0px white;
 }
 
-main ul li h3 span{
+main > ul li h3 span{
     font-size: 2em;
 }
 
-main ul li > div:nth-of-type(2){
+main > ul li > div:nth-of-type(2){
     width: calc(100% - 1em);
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 0.25em;   
@@ -138,7 +165,7 @@ main ul li > div:nth-of-type(2){
 }
 
 /* profielfoto */
-main ul li img{
+main > ul li img{
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
@@ -146,7 +173,7 @@ main ul li img{
 }
 
 /*  naam en punten*/
-main ul li > div div{
+main > ul li > div div{
     margin-left: 1em;
     display: flex;
     flex-direction: column;
@@ -154,14 +181,14 @@ main ul li > div div{
 }
 
 /* naam */
-main ul li div p a{
+main > ul li div p a{
     text-size-adjust: auto;
     text-decoration: none;
     color: white;
 }
 
  /* punten */
-main ul li div div p:last-of-type {
+main > ul li div div p:last-of-type {
     margin-top: 0.125em;
     font-size: 1em;
     background: -webkit-linear-gradient(#FFD634, #ED7B31);
@@ -169,7 +196,7 @@ main ul li div div p:last-of-type {
     -webkit-text-fill-color: transparent;
 }
 
-main ul li div div p span{
+main > ul li div div p span{
     font-size: 2.5em;
 }
 
