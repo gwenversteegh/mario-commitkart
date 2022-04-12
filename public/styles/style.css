@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6, p{
 
 main{
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/ba.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 main ul{
