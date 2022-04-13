@@ -16,7 +16,7 @@
                 <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
                 <% data.forEach((element, i) => { %> 
                 <li>
-                    <img src="<%= element.node.owner.avatarUrl %>" alt="">  
+                    <img src="<%= element.node.owner.avatarUrl %>" alt="profielfoto">  
                 </li>
                 <%})%>
             </ul>
@@ -40,8 +40,17 @@
             <%})%>
         </ul>
 
-        <div>
-            
+        <div id="podium">
+            <ul>
+                <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
+                <% const top3 = data.slice(0,3) %> 
+                <% top3.forEach((element, i) => { %>
+                <li>
+                    <p><%= element.node.owner.login %></p>   
+                    <img src="<%= element.node.owner.avatarUrl %>" alt="profielfoto">                 
+                </li>
+                <%})%>
+            </ul>
         </div>
     </main>
     <footer>

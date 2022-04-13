@@ -389,4 +389,69 @@ main > ul li div div p span{
     font-size: 2.5em;
 }
 
+div#podium{
+    position: absolute;
+    width: 70vw;
+    height: 100vh;
+    top: 0; left: 0;
+    background-image: url(/images/podium.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    z-index: 11;
+    opacity: 0;
+    animation-name: podium;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+@keyframes podium{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+div#podium ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+div#podium ul li{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#podium ul li p{
+    font-size: 2em;
+    text-shadow: 0px -2px white;
+}
+
+div#podium ul li img{
+    width: 10vw;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+div#podium ul li:first-of-type{
+    top: 27%;
+    left: 47%;
+}
+
+div#podium ul li:nth-of-type(2){
+    top: 41%;
+    left: 10%;
+}
+
+div#podium ul li:nth-of-type(3){
+    top: 41%;
+    left: 72%;
+}
 
