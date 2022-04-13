@@ -18,9 +18,19 @@ html{
 
 header{
     position: absolute;
-    top: 2em; left: 4em;
-    text-shadow: 1px -2px 0px white;
+    top: 1em; left: 4em;
     z-index: 10;
+}
+
+header h1{
+    font-size: 3.5em;
+    /* letter-spacing: 5px; */
+    background: -webkit-linear-gradient(#FFFFFF, #FF0000, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
 }
 
 main{
@@ -57,24 +67,85 @@ main div#baan ul li{
 
     animation: move 5s linear;
     animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 main div#baan ul li:first-of-type{
-    animation-delay: 0.5s;
+    animation-duration: 5s;
 }
 
-main div#baan ul li:n-of-type{
-    animation-delay: 0.5s;
+main div#baan ul li:nth-of-type(2){
+    animation-duration: 5.2s;
 }
 
+main div#baan ul li:nth-of-type(3){
+    animation-duration: 5.4s;
+}
+
+main div#baan ul li:nth-of-type(4){
+    animation-duration: 5.6s;
+}
+
+main div#baan ul li:nth-of-type(4){
+    animation-duration: 5.8s;
+}
+main div#baan ul li:nth-of-type(5){
+    animation-duration: 6s;
+}
+main div#baan ul li:nth-of-type(6){
+    animation-duration: 6.2s;
+}
+main div#baan ul li:nth-of-type(7){
+    animation-duration: 6.4s;
+}
+main div#baan ul li:nth-of-type(8){
+    animation-duration: 6.6s;
+}
+main div#baan ul li:nth-of-type(9){
+    animation-duration: 6.8s;
+}
+main div#baan ul li:nth-of-type(10){
+    animation-duration: 7s;
+}
+main div#baan ul li:nth-of-type(11){
+    animation-duration: 7.2s;
+}
+main div#baan ul li:nth-of-type(12){
+    animation-duration: 7.4s;
+}
+main div#baan ul li:nth-of-type(13){
+    animation-duration: 7.6s;
+}
+main div#baan ul li:nth-of-type(14){
+    animation-duration: 7.8s;
+}
+main div#baan ul li:nth-of-type(15){
+    animation-duration: 8s;
+}
+main div#baan ul li:nth-of-type(16){
+    animation-duration: 8.2s;
+}
+main div#baan ul li:nth-of-type(17){
+    animation-duration: 8.4s;
+}
+main div#baan ul li:nth-of-type(18){
+    animation-duration: 8.6s;
+}
+main div#baan ul li:nth-of-type(19){
+    animation-duration: 8.8s;
+}
+main div#baan ul li:nth-of-type(20){
+    animation-duration: 9s;
+}
 
 @keyframes move {
-    0% {
-      offset-distance: 0%;
+    0%{
+        offset-distance: 0%;
     }
-    100% {
+    47%{
+        animation-play-state: paused;
+    }
+    100%{
       offset-distance: 100%;
     }
 }
@@ -86,7 +157,7 @@ main div#baan ul li img{
 }
 
 
-/* -------------------- raking lijst -------------------- */
+/* -------------------- Ranking lijst -------------------- */
 main > ul{
     width: 30vw;
     height: 100vh;
@@ -98,6 +169,18 @@ main > ul{
     background-color: rgba(0, 0, 0, 0.8);    
     border-radius: 0.5em;
     overflow: scroll;
+}
+
+main > ul h3{
+    grid-column-start: 1;
+    font-size: 3em;
+    margin-top: 0.25em;
+    width: 100%;
+    text-align: center;
+
+    background: -webkit-linear-gradient(#FFFFFF, #FF0000, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main > ul li{
@@ -113,6 +196,80 @@ main > ul li{
     margin-bottom: 1em;
     border-radius: 0.5em;
     position: relative;
+    transform: translateY(100vw);
+    animation-name: komtevoorschijn;
+    animation-duration:  1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+main > ul li:nth-of-type(2){
+    animation-delay: 5.1s;
+}
+
+main > ul li:nth-of-type(3){
+    animation-delay: 5.2s;
+}
+main > ul li:nth-of-type(4){
+    animation-delay: 5.3s;
+}
+main > ul li:nth-of-type(5){
+    animation-delay: 5.4s;
+}
+main > ul li:nth-of-type(6){
+    animation-delay: 5.5s;
+}
+main > ul li:nth-of-type(7){
+    animation-delay: 5.6s;
+}
+main > ul li:nth-of-type(8){
+    animation-delay: 5.7s;
+}
+main > ul li:nth-of-type(9){
+    animation-delay: 5.8s;
+}
+main > ul li:nth-of-type(10){
+    animation-delay: 5.9s;
+}
+main > ul li:nth-of-type(11){
+    animation-delay: 6s;
+}
+main > ul li:nth-of-type(12){
+    animation-delay: 6.1s;
+}
+main > ul li:nth-of-type(13){
+    animation-delay: 6.2s;
+}
+main > ul li:nth-of-type(14){
+    animation-delay: 6.3s;
+}
+main > ul li:nth-of-type(15){
+    animation-delay: 6.4s;
+}
+main > ul li:nth-of-type(16){
+    animation-delay: 6.5s;
+}
+main > ul li:nth-of-type(17){
+    animation-delay: 6.6s;
+}
+main > ul li:nth-of-type(18){
+    animation-delay: 6.7s;
+}
+main > ul li:nth-of-type(19){
+    animation-delay: 6.8s;
+}
+main > ul li:nth-of-type(20){
+    animation-delay: 6.9s;
+}
+
+
+@keyframes komtevoorschijn{
+    0%{
+        transform: translateY(100vw);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 main > ul li:first-of-type{
@@ -179,12 +336,6 @@ main > ul li:nth-of-type(3) h2{
     background: -webkit-linear-gradient(#fdd26d, #c28523);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-main > ul li h3{
-    grid-column-start: 1;
-    margin-top: 0.25em;
-    text-shadow: 0px -1px 0px white;
 }
 
 main > ul li h3 span{

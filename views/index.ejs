@@ -14,8 +14,7 @@
         <div id="baan">
             <ul>
                 <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
-                <% data.forEach((element, i) => { %>
-                
+                <% data.forEach((element, i) => { %> 
                 <li>
                     <img src="<%= element.node.owner.avatarUrl %>" alt="">  
                 </li>
@@ -23,13 +22,12 @@
             </ul>
         </div>
         <ul>
+            <h3>Ranking</h3>
             <% data.sort((a, b) => (a.node.defaultBranchRef.target.history.totalCount < b.node.defaultBranchRef.target.history.totalCount) ? 1 : -1)  %>
             <% data.forEach((element, i) => { %>
-            
             <li>
                 <div>
                     <h2><%= i +1 %></h2>
-                    <h3><span><%= Math.floor(element.node.defaultBranchRef.target.history.totalCount/30)  %></span> laps</h3>
                 </div>
                 <div>
                     <img src="<%= element.node.owner.avatarUrl %>" alt="">
@@ -41,6 +39,10 @@
             </li>
             <%})%>
         </ul>
+
+        <div>
+            
+        </div>
     </main>
     <footer>
 
