@@ -12,6 +12,17 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'mario', arial;
 }
 
+html{
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 2em; left: 4em;
+    text-shadow: 1px -2px 0px white;
+    z-index: 10;
+}
+
 main{
     position: relative;
     width: 100vw;
@@ -36,15 +47,42 @@ main div#baan ul{
 }
 
 main div#baan ul li{
-    width: 2vw;
-    height: 5vw;
     position: absolute;
-    top: 0; left: 55%;
+    width: 4vw;
+    height: 4vw;
+    top: 0;  
+    left: 50vw;
+
+    offset-path: path('M -516.07 18.03 c -141.37 21.86 -213.92 -49.76 -267.92 -13.76 c -21.79 28.62 -64 59 -54.76 152.72 c 2.37 77.3 -16.24 115.28 52.75 286.07 c 55 87.94 164 51.94 185 -38 c 20 -29 13 -84.06 41 -114.06 c 6 -12 45 -19 101 -9.06 c 53.24 8.72 67.24 107.72 103.24 165.72 c 22 23 62 40 111 18 c 78 0 105.76 -40.66 119.76 -114.66 c 9.76 -35.15 -5.08 -135.24 -10 -191 c -9.7 -34.5 -28.08 -98.11 -80 -128 c -66.07 -38.03 -116.12 19.26 -210.08 -12.24 Z');
+
+    animation: move 5s linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+main div#baan ul li:first-of-type{
+    animation-delay: 0.5s;
+}
+
+main div#baan ul li:n-of-type{
+    animation-delay: 0.5s;
+}
+
+
+@keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
 }
 
 main div#baan ul li img{
     width: 100%;
     border-radius: 50%;
+    transform: rotate(180deg);
 }
 
 

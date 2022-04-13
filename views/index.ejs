@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-
+        <h1>Mario commitkart</h1>
     </header>
     <main>
         <div id="baan">
@@ -17,8 +17,7 @@
                 <% data.forEach((element, i) => { %>
                 
                 <li>
-                    <img src="<%= element.node.owner.avatarUrl %>" alt="">
-                    <p><%= element.node.owner.login %></p>      
+                    <img src="<%= element.node.owner.avatarUrl %>" alt="">  
                 </li>
                 <%})%>
             </ul>
@@ -30,7 +29,7 @@
             <li>
                 <div>
                     <h2><%= i +1 %></h2>
-                    <h3><span>3</span> laps</h3>
+                    <h3><span><%= Math.floor(element.node.defaultBranchRef.target.history.totalCount/30)  %></span> laps</h3>
                 </div>
                 <div>
                     <img src="<%= element.node.owner.avatarUrl %>" alt="">
