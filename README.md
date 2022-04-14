@@ -70,4 +70,7 @@ En zo wordt het gebruikt in EJS
   <p><a href="<%= element.node.owner.url %>"><%= element.node.owner.login %></a></p>
   <p><span><%= element.node.defaultBranchRef.target.history.totalCount %></span> commits</p>
 </div>
-```                    
+```    
+
+##
+Gemaakt door Gwen Versteegh & Sophie van der Burg
