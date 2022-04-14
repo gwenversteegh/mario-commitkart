@@ -1,5 +1,5 @@
 # :checkered_flag: Mario Commitkart 
-<img width="500" alt="Screenshot 2022-04-14 at 10 23 44" src="https://user-images.githubusercontent.com/70577898/163344977-6c3eb47e-6448-48aa-b391-74956ce3b53e.png">     <img width="500" alt="Screenshot 2022-04-14 at 10 23 52" src="https://user-images.githubusercontent.com/70577898/163344960-c3d50276-4c84-43f0-accf-906a5ff7aa7d.png">
+<img width="400" alt="Screenshot 2022-04-14 at 10 23 44" src="https://user-images.githubusercontent.com/70577898/163344977-6c3eb47e-6448-48aa-b391-74956ce3b53e.png">     <img width="400" alt="Screenshot 2022-04-14 at 10 23 52" src="https://user-images.githubusercontent.com/70577898/163344960-c3d50276-4c84-43f0-accf-906a5ff7aa7d.png">
 
 ## De opdracht
 Vier dagen creatieve verkenning met de GitHub GraphQL API
